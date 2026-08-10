@@ -95,9 +95,17 @@
   var creditName = document.getElementById("credit-name");
   var creditRole = document.getElementById("credit-role");
   var creditInst = document.getElementById("credit-inst");
+  var creditPhoto = document.getElementById("credit-photo");
   if (creditName) creditName.textContent = APP_CONFIG.designerName || "";
   if (creditRole) creditRole.textContent = APP_CONFIG.designerRole || "";
   if (creditInst) creditInst.textContent = APP_CONFIG.designerInstitute || "";
+  if (creditPhoto && APP_CONFIG.designerPhoto) {
+    creditPhoto.onerror = function () {
+      creditPhoto.style.display = "none";
+    };
+    creditPhoto.src = APP_CONFIG.designerPhoto;
+    creditPhoto.style.display = "inline-block";
+  }
 
   render();
 

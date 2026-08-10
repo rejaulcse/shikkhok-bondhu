@@ -154,6 +154,15 @@ main {
 .credit .name { font-weight: 700; color: var(--teal-dark); font-size: 15px; }
 .credit .role { color: var(--gold); font-weight: 600; font-size: 13px; margin-top: 2px; }
 .credit .inst { font-size: 13px; margin-top: 2px; }
+.credit-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+  margin-bottom: 8px;
+  display: none; /* shown via JS only if a photo is configured */
+}
 
 /* ---------- Empty state ---------- */
 .empty {
