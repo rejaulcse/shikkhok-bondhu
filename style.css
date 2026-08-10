@@ -170,6 +170,7 @@ main {
   color: #7c8b88;
   padding: 40px 16px;
   font-size: 15px;
+  grid-column: 1 / -1;
 }
 
 /* transitions between screens */
@@ -183,4 +184,67 @@ main {
 
 @media (min-width: 640px) {
   .hero { height: 220px; }
+}
+
+/* ---------- Desktop / wide-screen layout ---------- */
+@media (min-width: 900px) {
+  .topbar {
+    padding-inline: max(24px, calc((100% - 1100px) / 2 + 24px));
+  }
+  .topbar h1 {
+    font-size: 26px;
+  }
+  .back-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .hero {
+    height: 320px;
+  }
+
+  main {
+    max-width: 1100px;
+    padding: 32px 24px 60px;
+  }
+
+  .section-label {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  .menu-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .menu-item {
+    padding: 22px 24px;
+    font-size: 18px;
+    border-radius: 14px;
+  }
+
+  .menu-item .chevron {
+    width: 24px;
+    height: 24px;
+  }
+
+  .credit {
+    padding-top: 36px;
+  }
+  .credit-photo {
+    width: 84px;
+    height: 84px;
+  }
+  .credit .name { font-size: 17px; }
+  .credit .role { font-size: 14px; }
+  .credit .inst { font-size: 14px; }
+}
+
+@media (min-width: 1300px) {
+  .menu-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
