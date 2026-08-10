@@ -1,4 +1,4 @@
-const CACHE_NAME = "teacher-app-shell-v1";
+const CACHE_NAME = "teacher-app-shell-v2";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -30,24 +30,22 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
-// App shell: cache-first. External link destinations are never intercepted
-// (they open in a normal browser tab), so this only affects this app's own files.
+// App shell: network-first. Always tries to fetch the latest version of this
+// app's own files (index.html, config.js, app.js, images, etc.) when online,
+// so edits made on GitHub show up the next time the app is opened with
+// internet access. Falls back to the cached copy only when offline.
+// External link destinations are never intercepted — they open normally.
 self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
 
   event.respondWith(
-    caches.match(event.request).then((cached) => {
-      return (
-        cached ||
-        fetch(event.request)
-          .then((res) => {
-            const clone = res.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
-            return res;
-          })
-          .catch(() => cached)
-      );
-    })
+    fetch(event.request)
+      .then((res) => {
+        const clone = res.clone();
+        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+        return res;
+      })
+      .catch(() => caches.match(event.request))
   );
 });
