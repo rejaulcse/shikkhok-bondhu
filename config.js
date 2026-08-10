@@ -96,8 +96,7 @@ const APP_CONFIG = {
     },
     {
       title: "সকল শ্রেণীর বই",
-      url: "https://nctb.gov.bd/pages/static-pages/695b97ffc4774958d7b70329
-",
+      url: "https://nctb.gov.bd/pages/static-pages/695b97ffc4774958d7b70329",
     },
     {
       title: "সকল প্রশিক্ষণ কেন্দ্র",
