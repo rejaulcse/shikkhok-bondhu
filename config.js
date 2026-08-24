@@ -74,6 +74,13 @@ const APP_CONFIG = {
       url: "http://103.248.15.123/emis",
     },
     {
+      title: "বদলি ব্যবস্থাপনা",
+      children: [
+        { title: "কলেজ বদলি", url: "https://ngttvacant.vercel.app" },
+        { title: "মাদ্রাসা বদলি", url: "https://example.com/madrasha-bodli" },
+      ],
+    },
+    {
       title: "শিক্ষক ও প্রতিষ্ঠানের তথ্য",
       children: [
         { title: "ক্লিক করে EIIN দেখুন", url: "http://202.72.235.217:3082/" },
