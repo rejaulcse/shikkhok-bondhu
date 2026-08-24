@@ -27,7 +27,7 @@ const APP_CONFIG = {
         { title: "মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর (মাউশি)", url: "https://dshe.gov.bd" },
         { title: "মাদ্রাসা শিক্ষা অধিদপ্তর", url: "https://dme.gov.bd" },
         { title: "কারিগরি শিক্ষা অধিদপ্তর", url: "https://techedu.gov.bd" },
-        { title: "ইসলামি আরবি বিশ্ববিদ্যালয়", url: "https://iau.edu.bd" },
+        { title: "ইসলামি আরবি বিশ্ববিদ্যালয়", url: "http://iau.edu.bd" },
         { title: "জাতীয় বিশ্ববিদ্যালয়", url: "https://nu.ac.bd" },
         {
           title: "শিক্ষা বোর্ড",
@@ -83,22 +83,21 @@ const APP_CONFIG = {
     {
       title: "শিক্ষক ও প্রতিষ্ঠানের তথ্য",
       children: [
-        { title: "ক্লিক করে EIIN দেখুন", url: "http://202.72.235.217:3082/" },
+        { title: "ক্লিক করে EIIN দেখুন", url: "https://locator.eduportalbd.com/institutes/list.php#search" },
         { title: "শিক্ষকদের তথ্য (স্কুল কলেজ)", url: "http://103.248.15.123/EMIS/portal" },
-        { title: "শিক্ষকদের তথ্য (মাদ্রাসা)", url: "http://202.72.235.210/teachers_database/" },
+        { title: "শিক্ষকদের তথ্য (মাদ্রাসা)", url: "http://182.252.85.84:3080/" },
         { title: "NTRCA সুপারিশকৃতদের তথ্য-১", url: "http://103.230.104.210:8088/ntrca/c7/app/requisition-list.php?result=true" },
         { title: "NTRCA সুপারিশকৃতদের তথ্য-২", url: "http://103.230.104.210:8088/ntrca/c8/app/requisition-list.php?result=true" },
-        { title: "শিক্ষকদের তথ্য (ফোন নাম্বার সহ)", url: "http://202.72.235.217:3028/login/" },
-        { title: "আমি লুকিয়ে আছি", url: "https://example.com/hidden" },
+        { title: "শিক্ষকদের তথ্য (ফোন নাম্বার সহ)", url: "https://report1.memis.gov.bd:8087/" },
       ],
     },
     {
       title: "পাবলিক পরিক্ষার ফলাফল",
       children: [
-        { title: "Education board Result1", url: "https://www.educationboardresults.gov.bd/v2/home" },
-        { title: "Education board Result2", url: "https://eduboardresults.gov.bd" },
-        { title: "Madrasha Board Result", url: "https://bmeb.gov.bd" },
-        { title: "Madrasha Board Result", url: "https://ebmeb.gov.bd" },
+        { title: "Education board Result Link 1", url: "https://www.educationboardresults.gov.bd/v2/home" },
+        { title: "Education board Result Link 2", url: "https://eduboardresults.gov.bd" },
+        { title: "Madrasha Board Result Link 3", url: "https://bmeb.gov.bd" },
+        { title: "Madrasha Board Result Link 4", url: "https://ebmeb.gov.bd" },
        ],
     },
     {
