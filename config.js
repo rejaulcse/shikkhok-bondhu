@@ -77,7 +77,7 @@ const APP_CONFIG = {
       title: "বদলি ব্যবস্থাপনা",
       children: [
         { title: "কলেজ বদলি", url: "https://ngttvacant.vercel.app" },
-        { title: "মাদ্রাসা বদলি", url: "https://shorturl.at/qcs0z" },
+        { title: "মাদ্রাসা বদলি", url: "https://ngttdm.vercel.app/" },
       ],
     },
     {
